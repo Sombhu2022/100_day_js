@@ -4,8 +4,12 @@
 
 const hashTagGenarator=(str)=>{
    // split function return array from  string  
-   str = str.split(" ") // [ 'My', 'Name', 'Is', 'Sombhu', 'Das' ]
+   str = str.split(" ") // [ 'my', 'name', 'is', 'sombhu', 'das' ]
+
    str =str.map((ele)=>{
+      if(ele === "") {
+         return ""
+      }
       ele = ele[0].toUpperCase() + ele.slice(1)
       return ele
    })
@@ -14,4 +18,4 @@ const hashTagGenarator=(str)=>{
    return str
 }
 
-console.log(hashTagGenarator("my name is sombhu das"));
+console.log(hashTagGenarator("my      name is3 -      sombhu das"));
