@@ -8,6 +8,7 @@ arr.sort()
 // in numerical number we can use callback function 
 // where (a , b) => a -> containe previous value and b containe next value from the array 
 // return a-b -> to sort array in accending order , b-a -> use to sort decending order.
+
 arr.sort((a , b)=>{
     return a-b
 })
