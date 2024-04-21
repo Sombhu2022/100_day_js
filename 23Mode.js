@@ -3,13 +3,13 @@
 const findMode = (arr , val)=>{
    let hashMap ={} 
    arr.forEach(ele=>{
-      hashMap[ele] = 0
+      hashMap[ele] = (hashMap[ele] || 0)+1
    })
-   arr.forEach(ele=>{
-      hashMap[ele] +=1
-   })
+   // arr.forEach(ele=>{
+   //    hashMap[ele] +=1
+   // })
    let isPresent = arr.includes(val)
-//    console.log(isPresent);
+
    if(isPresent){
        return hashMap[val]
    }
