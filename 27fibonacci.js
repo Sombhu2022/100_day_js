@@ -2,6 +2,8 @@
 
 // formula => f(n) = f(n-1)+f(n-2)
 
+n=5
+
 const fibonacci=(num)=>{
   if (num <= 1) {
     return num
@@ -10,4 +12,8 @@ const fibonacci=(num)=>{
   }
 }
 
-console.log(fibonacci(0));
+
+while( n > -1){
+ console.log(fibonacci(n--));
+}
+
