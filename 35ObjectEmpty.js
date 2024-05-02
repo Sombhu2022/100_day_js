@@ -11,6 +11,6 @@ const isObjectEmpty = (obj={})=>{
     return `${obj} is empty`
 }
 
-console.log(isObjectEmpty({key: null , key2:undefined   }));
+console.log(isObjectEmpty({key: null , key2:undefined }));
 // console.log(isObjectEmpty({}));
 // console.log(isObjectEmpty({key:undefined , key2:'null'}));
