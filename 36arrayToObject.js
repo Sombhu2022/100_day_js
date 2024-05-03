@@ -1,6 +1,6 @@
 
 const arrayToObject =(arr)=>{
-  obj = {}
+ let  obj = {}
   arr.map((ele, index)=>{
       obj = { ...obj , [index]:ele}
   })
